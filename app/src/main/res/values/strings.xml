@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FREDI_android</string>
+    <string name="suivant">Suivant</string>
+    <string name="mail">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="ldf">Ligne de frais</string>
 </resources>

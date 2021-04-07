@@ -6,4 +6,118 @@
     android:layout_height="match_parent"
     tools:context=".ListLignesFraisActivity">
 
+    <TextView
+        android:id="@+id/tv_peage"
+        android:layout_width="379dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_km_total" />
+
+    <TextView
+        android:id="@+id/tv_repas"
+        android:layout_width="379dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_peage" />
+
+    <TextView
+        android:id="@+id/tv_hebergement"
+        android:layout_width="379dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_repas" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="379dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hebergement" />
+
+    <TextView
+        android:id="@+id/tv_motif"
+        android:layout_width="379dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+    <TextView
+        android:id="@+id/tv_trajet"
+        android:layout_width="379dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_motif" />
+
+    <TextView
+        android:id="@+id/tv_km"
+        android:layout_width="379dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_trajet" />
+
+    <TextView
+        android:id="@+id/tv_km_total"
+        android:layout_width="379dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_km" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="379dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_annee" />
+
+    <TextView
+        android:id="@+id/tv_nom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/ldf" />
+
+    <TextView
+        android:id="@+id/tv_annee"
+        android:layout_width="379dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nom" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

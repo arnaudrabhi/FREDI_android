@@ -8,26 +8,28 @@
     tools:context=".LoginActivity">
 
     <EditText
-        android:id="@+id/userLogin"
+        android:id="@+id/tv_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
         android:ems="10"
+        android:hint="@string/mail"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/tv_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
+        android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_email" />
 
     <TextView
         android:id="@+id/textView"
@@ -49,8 +51,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:onClick="Connexion"
         android:text="Connexion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_password" />
 </androidx.constraintlayout.widget.ConstraintLayout>

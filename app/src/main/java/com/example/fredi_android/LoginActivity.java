@@ -2,63 +2,38 @@ package com.example.fredi_android;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.JsonReader;
+import android.view.View;
 import android.widget.EditText;
 
-import org.json.JSONObject;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
-import java.net.URL;
 
 public class LoginActivity extends AppCompatActivity {
+
+    EditText myViewUser;
+    EditText myViewPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        myViewUser = (EditText) findViewById(R.id.tv_email);
+        myViewPassword = (EditText) findViewById(R.id.tv_password);
+
     }
 
-    public void Connexion() throws MalformedURLException {
-        EditText username = (EditText)findViewById(R.id.userLogin);
+    public void Connexion(View view) throws MalformedURLException {
+        EditText username = (EditText)findViewById(R.id.tv_email);
         EditText password = (EditText)findViewById(R.id.mdpLogin);
-
-        JSONObject json = new JSONObject();
-
-        String url_string = "http://localhost/projets/fredi/note_json.php?" + "email=" + username + "&password=" + password;
-
-
-
-        try {
-            URL url = new URL(url_string);
-            HttpURLConnection connection = (HttpURLConnection)url.openConnection();
-            connection.setRequestProperty("User-Agent", "");
-            connection.setRequestMethod("GET");
-            connection.setDoInput(true);
-            connection.connect();
-
-            InputStream inputStream = connection.getInputStream();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-
-
-        URL url = new URL("http://localhost/projets/fredi/note_json.php");
-
-
-
-
-
-
-
-
-
+        // Création de l'intent pour Login
+        Intent myIntent = new Intent(this, ListBordereauxActivity.class);
+        // Ajoute le login et le password dans l'intent
+        String myData[]={username.getText().toString(),password.getText().toString()};
+        myIntent.putExtra(MyAsyncTask.EXTRA_MESSAGE, myData);
+        // Lancement de l'activité
+        startActivity(myIntent);
 
     }
 
